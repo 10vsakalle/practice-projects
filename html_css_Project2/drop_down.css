@@ -1,0 +1,32 @@
+.navbutton{
+    width: 70px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.dropdownbutton{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    margin-left: -10px;
+    padding-top: 20px;
+}
+
+.dropdownbutton .navbutton{
+    display: block;
+    background-color: darkgoldenrod;
+
+}
+
+.navbutton:hover .dropdownbutton{
+    display: block;
+
+}
+
+.dropdownbutton .navbutton:hover{
+    background-color: darkred;
+    transition-duration: 1s;
+}

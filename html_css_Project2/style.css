@@ -1,0 +1,262 @@
+html{
+    height: 100%;
+    background-image:linear-gradient(#f79cbd, #acf3ed);
+    background-attachment: fixed;
+}
+
+body{
+background-image: url(images/image-lion-background.png);
+background-repeat: no-repeat;
+background-position: top center ;
+font-family: 'Roboto', sans-serif;
+color: white;
+font-size: 1rem;
+font-weight: 100;
+/*height: 100%;*/
+}
+
+.container{
+    min-height: 300px;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(240, 239, 239);
+}
+
+h1{
+    font-size: 3.25rem;
+    font-family:'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    text-shadow:5px 5px 5px rgba(0, 0, 0, 0.301);
+}
+
+h2{
+    font-size: 2rem;
+    font-family:'Playfair Display', serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+main{
+    min-height: 300px;
+    display: flex;
+    align-items:center;
+}
+
+.main2{
+    min-height: 300px;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+}
+
+.inputformfield{
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+
+    
+}
+
+.cards p{
+    line-height: 1rem;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.card1{
+    background-image: url(images/image-background-card1.jpg);
+    background-position:top;
+    background-size: cover;
+    width: 30%;
+    min-height: 250px;
+    padding-top: 20px;
+}
+
+.card2{
+    background-image: url(images/image-background-card2.jpg);
+    background-position: left;
+    background-size: cover;
+    width: 30%;
+    min-height: 250px;
+    padding-top: 20px;
+}
+
+.card3{
+    background-image: url(images/image-background-card3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    min-height: 250px;
+    padding-top: 20px;
+}
+
+.card1, .card2, .card3{
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    border-radius:2px;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.301);
+}
+
+.headerbox1{
+    flex: 2;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.headerbox2{
+    flex: 1;
+}
+
+.headerbox2 img { 
+    border-radius: 2px;
+}
+
+p{
+    line-height: 1.5rem;
+   /* margin-bottom: 1rem;*/ /*coz button buttonMain has top margin*/ 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.buttonMain{
+    background-color: white;
+    color: #f86058;
+    padding: 10px 20px;
+    font-family:'Playfair Display', serif;
+  /* display: inline-block;
+    margin-top: 10px;*/ /*nothin wrong with this code. Below is a new and another way to do it */
+    border-radius: 3px;
+    box-shadow:5px 5px 5px rgba(134, 134, 134, 0.274);
+}
+
+.buttonMain:hover{
+    background-color: rgb(178, 238, 235);
+    transition-duration: 1s;
+}
+
+a.buttonMain{
+    display: inline-block; /* This is a display setting. This changes how text gets treated - as a block or as a line.*/
+    margin-top: 10px;
+}
+
+.tbox :last-child{
+    font-size: 0.8rem;
+    padding-left: 30px;
+}
+
+
+.buttonNav{
+    color:white;
+    padding: 10px 20px;
+    font-family:'Playfair Display', serif;
+    border-radius: 3px;
+    border: 1px solid rgb(236, 236, 236);
+    display: inline-block;
+    position: relative;
+
+
+   /* border-style: solid;    
+    border-color: rgba(255, 255, 255, 0.699);
+    border-width: 1px;*/
+}
+
+.dropdownmenu .buttonNav a{
+    color:#f86058 ;
+
+}
+
+.dropdownmenu{
+   display: none;
+    z-index: 100;
+    margin-left: -20px;
+    position: absolute;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.dropdownmenu .buttonNav{
+    background-color: white;
+    display:block;
+    padding: 5px 20px;
+
+}
+
+.buttonNav:hover .dropdownmenu{
+    display: block;
+}
+
+.dropdownmenu .buttonNav:hover{
+    background-color: #b4eeec;
+    transition-duration: 1s;
+}
+
+.testimonial{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.tbox{
+    width: 47%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.newlinelabel{
+    display: block;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+input[type=text], input[type=email], textarea{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.marginright{
+    margin-right: 10px;
+}
+
+.buttonMain2{
+    background-color: white;
+    color: #f86058;
+    padding: 10px 20px;
+    font-family:'Playfair Display', serif;
+         /* display: inline-block;
+    margin-top: 10px;*/ /*nothin wrong with this code. Below is a new and another way to do it */
+    border-radius: 3px;
+    box-shadow:3px 3px 3px rgba(0, 0, 0, 0.301);
+    border: none;
+}
+
+.buttonMain2:hover{
+        background-color: #b4eeec;
+        transition-duration: 1s;
+}
+
+form{
+        margin: 30px 0px;
+}
