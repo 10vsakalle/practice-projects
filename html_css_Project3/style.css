@@ -1,0 +1,160 @@
+/* global view aka destop view */
+body{
+    background-color: #EBEBEB;
+}
+
+.header-container{
+    background-color: rgb(77, 77, 77);
+    min-height: 100px;
+   /* To fix the header's position at the top */
+    width: 100%;
+    position: fixed;
+}
+
+header{
+    min-height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: 'Proza Libre', sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo p{
+color: white;  
+}
+
+
+.boldFont{
+    font-weight: 700;
+}
+ 
+
+.navButton{
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+
+
+.container{
+    min-height: 300px;
+    max-width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Proza Libre', sans-serif;
+    padding-top: 140px ;
+}
+
+.col{
+    background-color: rgb(65, 214, 194);
+    width: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.col p{
+    font-size: 0.865rem;
+    color: white;
+    padding: 10px 25px;
+    line-height: 1.25rem;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.hide_in_desktop{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.burgerMenuWrapper{
+    display: none;
+}
+
+/*Tablet  view */
+@media (max-width: 786px){
+    .col{
+        width: 45%;
+    }
+
+    .hide_in_desktop{
+        display: block;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    header{
+        min-height: 100px;
+        width:100%;
+        margin: 0 auto;
+        font-family: 'Proza Libre', sans-serif;
+        text-align: center;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .navButton{
+        margin-left: 0;
+    }
+
+    .logo{
+        padding: 40px 0;
+    }
+
+    .container{
+        padding-top: 40px;
+    }
+
+    .burgerMenuWrapper{
+        display: block;
+    }
+
+    .mobileNav{
+        position: absolute;
+        margin-left: -70px;
+        display: none;
+    }
+
+    .mobileNav a{
+        display: block;
+
+    }
+
+    .mobNavButton{
+        padding: 10px 15px;
+        border: 1px solid white;
+        border-radius: 2px;
+        background-color: grey;
+    }
+}
+
+/* Mobile view */
+@media (Max-width: 380px){
+
+    .col{
+        width: 100%;
+    }
+
+    .hide_in_mobile{
+        display: none;
+    }
+
+    
+}
