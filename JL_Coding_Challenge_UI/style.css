@@ -1,0 +1,237 @@
+body{
+text-align: center;
+background-image: url(images/office.svg);
+background-repeat: repeat;
+background-size: 350px;
+margin: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+
+.navBar{
+background-color: rgba(0, 0, 0, 0.801);
+width: 100%;
+max-height: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 275px;
+padding-right: 275px;
+position: fixed;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+.navBar h1{
+display: inline;
+color: white;
+padding-top: 16px;
+padding-bottom: 16px;
+}
+
+.navBar a{
+    text-decoration: none;
+}
+
+.navOptions a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.navOptions a:hover{
+    color: rgb(179, 115, 115) ;
+}
+
+.Page-heading{
+color:  rgb(184, 97, 97);
+max-width: 1024px;
+padding: 50px 0 0 75px;
+text-align: left;
+margin-bottom: 30px;
+}
+
+.container-full{
+background-color: rgba(233, 233, 233, 0.719);
+max-width: 1024px;
+margin: auto;
+padding-top: 50px;
+}
+
+.container{
+max-width: 1024px;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+box-sizing: border-box;
+justify-content: center;
+
+}
+
+.cards{
+height: auto;
+min-width: 90%;
+background-color:#ffffff;
+margin-left: 13px;
+border-radius: 6px;
+margin-bottom: 60px;
+}
+
+.card-heading{
+max-width: 100%;
+margin: 20px 0 10px 0px;
+text-align: left;
+padding-left: 10% ;
+color:rgb(141, 137, 137);
+}
+
+
+
+button{
+margin: auto;
+border-radius: 5px;
+background-color: rgb(184, 97, 97);
+color: white;
+font-size: 15px;
+width: 81%;
+height: 30px;
+border: none;
+display: block;
+margin-bottom: 40px;
+}
+
+.similarJobButton{
+    width: 100%;
+}
+
+.locationInput{
+    width: 35%;
+    margin-bottom: 10px;
+    border-color:rgba(172, 169, 169);
+    border-radius: 5px 0 0 5px;
+    border-style: solid;
+}
+
+.searchInput{
+    width: 40%;
+    margin-bottom: 10px;
+    border-color:rgba(172, 169, 169);
+    border-radius: 5px;
+    border-style: solid;
+}
+
+
+.cards select{
+    width: 10%;
+    border-color:rgba(172, 169, 169);
+    border-radius:0 5px 5px 0;
+    padding: 2px;
+    border-style: 2px solid;
+    color: rgb(109, 104, 104);
+    outline: none;
+}
+
+.cards input:hover, .cards select:hover, .cards input:focus{
+    border-color: rgb(184, 97, 97);
+    outline: none;
+}
+
+.signUp{
+    color: rgb(141, 137, 137);
+}
+
+.linkColors{
+    color:rgb(184, 97, 97) ;
+}
+
+.margin{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.jobCards{
+height: auto;
+width: 90%;
+background-color:#ffffff;
+margin-left: 13px;
+border-radius: 6px;
+margin-bottom: 60px;
+text-align: left;
+color: rgb(141, 137, 137);
+padding: 30px;
+padding-left: 70px;
+}
+
+#fullJob{
+    display: none;
+}
+
+footer{
+background-color: rgba(0, 0, 0, 0.801);
+max-width: 100%;
+min-height: 60px;
+display: flex;
+align-items: center;
+padding-left: 275px;
+position: sticky;
+padding-top: 20px;
+padding-bottom: 20px;
+position:bottom;
+}
+
+.burgerMenuWrapper{
+    display: none;
+}
+
+/*tablet view*/
+@media (max-width: 1086px){
+    .navBar{
+        max-width: 100%;
+        min-height: 80px;
+        padding-left: 75px;
+        padding-right: 75px;
+        }
+        
+        
+        .navOptions a{
+           display: none;
+        }
+
+        .burgerMenuWrapper{
+            display: block;
+        }
+    
+        .mobileNav{
+            position: absolute;
+            margin-left: -70px;
+            display: none;
+        }
+    
+        .mobileNav a{
+            display: block;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.781);
+    
+        }
+
+        .mobileNav a:hover{
+            color: rgb(179, 115, 115);
+        }
+    
+        .mobNavButton{
+            padding: 10px 15px;
+            border: 1px solid white;
+            border-radius: 2px;
+            background-color: grey;
+        }
+    }
+
+
+/* Mobile view */
+@media (Max-width: 380px){
+    .navBar h1{
+        font-size: 20px;
+    }
+
+}
