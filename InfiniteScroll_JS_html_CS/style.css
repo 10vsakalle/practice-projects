@@ -1,0 +1,124 @@
+html{
+        
+    }
+
+body{
+ text-align: center;
+ background-image: url("images/Background_2.png");
+ background-repeat: no-repeat;
+ background-position: top center;
+ background-size: cover;
+ margin: 0;
+}
+
+
+.navBar{
+    background-color: black;
+    max-width: 100%;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 275px;
+    position: sticky;
+}
+
+.logo{
+}
+
+.navBar h1{
+    display: inline;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.heading{
+    color: black;
+    background-color: white;
+    max-width: 944px;
+    margin: auto;
+    padding: 54px 0px 54px 80px;
+    text-align: left;
+}
+
+.container-full{
+    background-color:white;
+    width: 1024px;
+    margin: auto;
+}
+
+.container{
+    background-color:white;
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:60px;
+    box-sizing: border-box;
+
+}
+
+.cards{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 238px;
+    width: 216px;
+    background-color:#f2f1f1;
+    margin-left: 13px;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.card-heading{
+    width: 100%;
+    margin: 6px;
+    text-align: left;
+}
+
+.poke-habitat{
+    height: 22px;
+    width: 108px;
+    border-radius: 0 6px 0 6px;
+    
+    margin-top: 184px;
+}
+
+.poke-power{
+    height: 22px;
+    width: 108px;
+    border-radius: 6px 0 6px 0;
+    margin-top: 184px;
+}
+
+.grass, .bug{
+    background-color: #a0da5e;
+}
+
+.poison{
+    background-color: #be93e7;
+}
+
+.fire{
+  background-color: #e85b0e;
+}
+
+.flying{
+    background-color: #8aa0b8;
+}
+
+.water{
+    background-color: #4A90e2;
+}
+
+button{
+    margin-bottom: 60px;
+    border-radius: 7px;
+    background-color: #4A90e2;
+    color: #1f2532;
+    font-size: 15px;
+    width: 170px;
+    height: 30px;
+    border: none;
+}
